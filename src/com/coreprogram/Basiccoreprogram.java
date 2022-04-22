@@ -4,14 +4,15 @@ import java.util.Scanner;
 
 public class Basiccoreprogram {
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-        int n = scanner.nextInt();
-        double sum =0;
-        for(double i=1;i<=n;i++)
-        {
-            sum=sum+1/i;
-        }
-        System.out.println("nth harmonic value"+sum);
+        int year;
+        System.out.println("enter an year :: ");
+        Scanner sc = new Scanner(System.in);
+        year = sc.nextInt();
 
+        if (year % 4 == 0)  {
+            System.out.println("year in the leap");
+        } else {
+            System.out.println("year is not a leap");
+        }
     }
 }
