@@ -4,15 +4,15 @@ import java.util.Scanner;
 
 public class Basiccoreprogram {
     public static void main(String[] args) {
-        int year;
+        int num;
         System.out.println("enter an year :: ");
         Scanner sc = new Scanner(System.in);
-        year = sc.nextInt();
+        num = sc.nextInt();
 
-        if (year % 4 == 0)  {
-            System.out.println("year in the leap");
+        if (num%2==0)  {
+            System.out.println("the number is even");
         } else {
-            System.out.println("year is not a leap");
+            System.out.println("the number is odd");
         }
     }
 }
