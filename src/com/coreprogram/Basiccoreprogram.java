@@ -4,11 +4,15 @@ import java.util.Scanner;
 
 public class Basiccoreprogram {
     public static void main(String[] args) {
-        char ch = 'i';
-        if (ch == 'a' || ch == 'b' || ch == 'i' || ch == 'o' || ch == 'u') {
-            System.out.println("is vomel");
-        } else {
-            System.out.println("is consonant");
-        }
+        int x, y, t;
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter the value of x and y");
+        x = sc.nextInt();
+        y = sc.nextInt();
+        System.out.println("before swaping number:" + x + " " + y);
+        t = x;
+        x = y;
+        y = t;
+        System.out.println("after swapping:" + x + " " + y);
     }
 }
