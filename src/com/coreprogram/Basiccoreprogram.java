@@ -5,19 +5,15 @@ import java.util.Scanner;
 public class Basiccoreprogram {
     public static void main(String[] args) {
 
-        int num = 90;
-        boolean flag = false;
-        for (int i = 2; i <= num / 2; ++i) {
-            // condition for nonprime number
-            if (num % i == 0) {
-                flag = true;
-                break;
-            }
-        }
+        int n1 = 10, n2 = 20, n3 = 30;
 
-        if (!flag)
-            System.out.println(num + " is a prime number.");
+        if( n1 >= n2 && n1 >= n3)
+            System.out.println(n1 + " is the largest number.");
+
+        else if (n2 >= n1 && n2 >= n3)
+            System.out.println(n2 + " is the largest number.");
+
         else
-            System.out.println(num + " is not a prime number.");
+            System.out.println(n3 + " is the largest number.");
     }
 }
