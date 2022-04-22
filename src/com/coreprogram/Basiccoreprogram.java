@@ -4,15 +4,20 @@ import java.util.Scanner;
 
 public class Basiccoreprogram {
     public static void main(String[] args) {
-        int x, y, t;
-        Scanner sc = new Scanner(System.in);
-        System.out.println("Enter the value of x and y");
-        x = sc.nextInt();
-        y = sc.nextInt();
-        System.out.println("before swaping number:" + x + " " + y);
-        t = x;
-        x = y;
-        y = t;
-        System.out.println("after swapping:" + x + " " + y);
+
+        int num = 90;
+        boolean flag = false;
+        for (int i = 2; i <= num / 2; ++i) {
+            // condition for nonprime number
+            if (num % i == 0) {
+                flag = true;
+                break;
+            }
+        }
+
+        if (!flag)
+            System.out.println(num + " is a prime number.");
+        else
+            System.out.println(num + " is not a prime number.");
     }
 }
