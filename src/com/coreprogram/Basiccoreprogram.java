@@ -4,15 +4,11 @@ import java.util.Scanner;
 
 public class Basiccoreprogram {
     public static void main(String[] args) {
-        int num;
-        System.out.println("enter an year :: ");
-        Scanner sc = new Scanner(System.in);
-        num = sc.nextInt();
-
-        if (num%2==0)  {
-            System.out.println("the number is even");
+        char ch = 'i';
+        if (ch == 'a' || ch == 'b' || ch == 'i' || ch == 'o' || ch == 'u') {
+            System.out.println("is vomel");
         } else {
-            System.out.println("the number is odd");
+            System.out.println("is consonant");
         }
     }
 }
