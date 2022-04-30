@@ -3,26 +3,14 @@ package com.coreprogram;
 import java.util.Scanner;
 
 public class Basiccoreprogram {
-    private static void flipCoinPercentage(int coinFlip) {
-        int headCount = 0;
-        int tailCount = 0;
-        for (int i = 1; i <= coinFlip; i++) {
-            double checkCoinFlip = Math.random() % 2;
-            if (checkCoinFlip < 0.5) {
-                System.out.println(" Tails ");
-                tailCount++;
-            } else {
-                System.out.println(" Heads");
-                headCount++;
-            }
+    private static void printTableOfPowerTwo() {
+        int base = 2;
+        int N = 31;
+        for (int i = 0; i < N; i++) {
+            System.out.println("Power of " + base + "^" + i + " is : " + Math.pow(base, i));
         }
-        float tailPercentage = ((tailCount * 100) / coinFlip);
-        System.out.println("Tail Count Percentage :" + tailPercentage + "%");
-        float headPercentage = ((headCount * 100) / coinFlip);
-        System.out.println("Head Count Percentage :" + headPercentage + "%");
     }
-
     public static void main(String[] args) {
-        flipCoinPercentage(10);
+        printTableOfPowerTwo();
     }
 }
