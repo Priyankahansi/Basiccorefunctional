@@ -3,17 +3,26 @@ package com.coreprogram;
 import java.util.Scanner;
 
 public class Basiccoreprogram {
+    private static void flipCoinPercentage(int coinFlip) {
+        int headCount = 0;
+        int tailCount = 0;
+        for (int i = 1; i <= coinFlip; i++) {
+            double checkCoinFlip = Math.random() % 2;
+            if (checkCoinFlip < 0.5) {
+                System.out.println(" Tails ");
+                tailCount++;
+            } else {
+                System.out.println(" Heads");
+                headCount++;
+            }
+        }
+        float tailPercentage = ((tailCount * 100) / coinFlip);
+        System.out.println("Tail Count Percentage :" + tailPercentage + "%");
+        float headPercentage = ((headCount * 100) / coinFlip);
+        System.out.println("Head Count Percentage :" + headPercentage + "%");
+    }
+
     public static void main(String[] args) {
-
-        int n1 = 10, n2 = 20, n3 = 30;
-
-        if( n1 >= n2 && n1 >= n3)
-            System.out.println(n1 + " is the largest number.");
-
-        else if (n2 >= n1 && n2 >= n3)
-            System.out.println(n2 + " is the largest number.");
-
-        else
-            System.out.println(n3 + " is the largest number.");
+        flipCoinPercentage(10);
     }
 }
